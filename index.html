@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Net Chilla</title>
+  </head>
+
+  <body>
+    <header>
+      <img src="images/NC.png" alt="NC logo" width="300" align="left" />
+      <br><br><br><br><br><br><br><br>
+      <input type="text" id="searchBox" placeholder="Search for a movie" class="search"/><br>
+      <button id="searchBtn" class="search">Search</button>
+      <br><br><br>
+  <ul id="searchResults"></ul>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+      </nav>
+    </header>
+
+    <p id="result"></p>
+
+    <!-- Movies -->
+    <div class="stack">
+      <h2 style="text-align: center; font-weight: bold;">Hot Movies This Week</h2>
+      <ul>
+        <!-- Sinners -->
+        <li>
+          <a href="https://www.youtube.com/watch?v=bKGxHflevuk" target="_blank">
+            <img src="images/Sinners.png" alt="sinners" width="200">
+          </a>
+          <br><label>Rate Between (1-5):</label>
+          <select id="sinnersRating">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+          <br>
+          <button onclick="addRating('sinners')">Add Rating</button>
+          <button onclick="averageRating('sinners')">Average Rating</button>
+          <button onclick="removeRating('sinners')">Remove Rating</button>
+          <div id="sinners"></div>
+        </li>
+
+        <!-- Woman King -->
+        <li>
+          <a href="https://www.youtube.com/watch?v=3RDaPV_rJ1Y" target="_blank">
+            <img src="images/woman king.png" alt="womanking" width="200">
+          </a>
+          <br><label>Rate Between (1-5):</label>
+          <select id="womankingRating">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+          <br>
+          <button onclick="addRating('womanking')">Add Rating</button>
+          <button onclick="averageRating('womanking')">Average Rating</button>
+          <button onclick="removeRating('womanking')">Remove Rating</button>
+          <div id="womanking"></div>
+        </li>
+
+        <!-- Inception -->
+        <li>
+          <a href="https://www.youtube.com/watch?v=LifqWf0BAOA" target="_blank">
+            <img src="images/inception.png" alt="inception" width="200">
+          </a>
+          <br><label>Rate Between (1-5):</label>
+          <select id="inceptionRating">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+          <br>
+          <button onclick="addRating('inception')">Add Rating</button>
+          <button onclick="averageRating('inception')">Average Rating</button>
+          <button onclick="removeRating('inception')">Remove Rating</button>
+          <div id="inception"></div>
+        </li>
+      </ul>
+       </div>
+
+    <div id="addYours">
+      <h2 style="text-align: center; font-weight: bold;">Add Movie Ratings of your own</h2>
+      <form id="ratingForm">
+        <label for="name">Name of the movie:</label><br>
+        <input type="text" id="name" placeholder="Enter name of the movie" required><br><br>
+
+        <br><label>Rate Between (1-5):</label>
+        <select id="movieRating">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        <br><br>
+        <button type="submit">Save Your Rating</button>
+      </form>
+      <hr>
+      <h2>Movie List</h2>  
+      <ul id="movieList"></ul>
+    </div>
+      <div>
+        <img src="images/avatar.png" alt="AvatarUpcoming" width="200" align="center" />
+        <h3>Avatar 3:Fire and Ash </h3>
+        <p id="countdown"></p>
+      </div>
+   
+
+    <div class="stack">
+      <h2 style="text-align: center; font-weight: bold; font-family:caligraphy">What to watch</h2>
+      <a href="https://www.youtube.com/watch?v=WpW36ldAqnM" target="_blank">
+        <img src="images/ironheart.png" alt="ironheart" width="150">
+      </a>
+      <a href="https://www.youtube.com/watch?v=1pHDWnXmK7Y" target="_blank">
+        <img src="images/captain.png" alt="captain" width="150">
+      </a>
+      <a href="https://www.youtube.com/watch?v=hUUszE29jS0" target="_blank">
+        <img src="images/thunderbolts.png" alt="thunderbolts" width="150">
+      </a>
+      <a href="https://www.youtube.com/watch?v=nb_fFj_0rq8" target="blank" class="avatar">
+        <img src="images/avatar.png" alt="Image 5" width="150" class="avatar"">
+           </a>
+         <a href="https://www.youtube.com/watch?v=1pHDWnXmK7Y" target="blank" class="electristate">
+        <img src="images/electristate.png" alt="Image 6" width="150" class="electristate"">
+           </a>
+         <a href="https://www.youtube.com/watch?v=0FSwsrFpkbw" target="blank" class="ballerina">
+         <img src="images/ballerina.png" alt="Image 2" width="150" class="ballerina">
+           </a>
+         <a href="https://www.youtube.com/watch?v=UWMzKXsY9A4" target="blank" class="final">
+         <img src="images/final.png" alt="Image 8" width="150" class="final">
+           </a>
+         <a href="https://www.youtube.com/watch?v=18QQWa5MEcs" target="blank" class="f4">
+        <img src="images/f4.png" alt="Image 1" width="150" class="f4">
+           </a>
+        <br><br><br>
+         <a href="https://www.youtube.com/watch?v=fbddYji1F8s" target="blank" class="pkok">
+        <img src="images/pkok.png" alt="Image 10" width="150" class="pkok">
+           </a>
+         <a href="https://www.youtube.com/watch?v=vEH_6_VlETA" target="blank" class="jack">
+         <img src="images/jack.png" alt="Image 9" width="150"class="jack">
+           </a>
+         <a href="https://www.youtube.com/watch?v=Ox8ZLF6cGM0" target="blank" class="superman">
+        <img src="images/superman.png" alt="Image 11" width="150" class="superman">
+           </a>
+         <a href="https://www.youtube.com/watch?v=mcvLKldPM08" target="blank" class="28">
+        <img src="images/28.png" alt="Image 4" width="150" class="28">
+           </a>
+         <a href="https://www.youtube.com/watch?v=OpThntO9ixc" target="blank" class="weapons">
+        <img src="images/weapons.png" alt="Image 13" width="150" class="weapons">
+           </a>
+    </div>
+    <div class="scroll-text">
+      <div class="scroll-text-content">
+      <span>I shouldn’t have to convince you to watch a cheeky murder mystery starring Helen Mirren. So the only thing I’ll add is: The Thursday Murder Club is based on Richard Osman’s hit novel (for which there are sequels) and is directed by '80s/'90s legend Chris Columbus. Trust us, there will be sequels, so you may as well join the club now. - Cillar's Expressions ! &nbsp;&nbsp;                        
+      
+      There’s been a lot of industry talk about the death of comedy at the box office, so will audiences embrace Olivia Colman and Benedict Cumberbatch playing highly unlikeable spouses who wage a domestic war with one another in a remake of The War of the Roses? — Kagiso Wa Letwini ! &nbsp;&nbsp;
+        </span>
+    </div>
+    
+    <footer>
+      <p style="font-family: arial">© 2025 Net chilla. All rights reserved.</p> <p id="clock"></p>
+    </footer>
+
+    
+    <script type="module" src="script.js"></script>
+    <script src="moment.js"></script>
+    <script src="mratings.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.29.4/moment.min.js"></script>
+
+  </body>
+</html>

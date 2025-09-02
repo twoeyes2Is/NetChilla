@@ -1,0 +1,138 @@
+<doctype html>
+  <html>
+    <head>
+      <meta charset="utf-8" content="text/html">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>About</title>
+    </head> 
+    <style>
+      body{
+        background-color: red;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        text-align: center; 
+        background-image: url('images/abi.png');
+        height: 120vh; 
+        background-size: cover;     
+        background-repeat: no-repeat; /* prevents tiling */
+        background-position: center;  /* keeps it centered */
+
+      }
+      header{
+        width: 100%;
+        color: white;
+        padding: 10px;
+        margin: 0 auto;
+
+      }
+      div{
+        background: rgba(0, 0, 0, 0.5);
+        color: red;
+        padding: 10px;
+        text-align: center;
+        margin: 10px;
+      }
+      ul{
+        list-style-type: disc; /* Changed from 'bold' to a valid value */
+        padding: 0;
+        text-align: center;
+      }
+      nav{
+        display: inline-block;
+        align-items: center;
+        color: white;
+        padding: 20px;
+        margin: 0 auto;
+      }
+      footer{
+        background: (0, 0, 0, 0.5);
+        padding: 20px;
+        color: white;
+        margin: 0 auto;
+        text-align: center;
+      }
+      input{
+        border-radius: 10px;
+        padding: 10px;
+        margin: 10px;
+        width: 300px;
+        height: 30px;
+        border: 1px solid red;
+
+      }
+      nav a {
+        margin: 0 15px;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-size: 1.5rem;
+        transition: color 0.3s ease;
+
+      }
+        nav a:hover {
+          color: red;
+          transform: scale(1.10);
+
+        }
+      .search{
+        float:right;
+        background-color: red;
+        color: white;
+        transition: color 0.3s ease;
+        opacity: 0.5;
+      }
+      .search:hover{
+        color: red;
+        background-color: white;
+      }
+      .whatsapp-btn {
+        position: fixed;
+        bottom: 20px;
+        background-color: #25D366;
+        color: white;
+        padding: 12px 20px;
+        border-radius: 30px;
+        text-decoration: none;
+        font-weight: bold;
+        font-family: Arial, sans-serif;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .whatsapp-btn:hover {
+        background-color: red;
+      }
+      .whatsapp-icon {
+        width: 20px;
+        height: 20px;
+      }
+    </style>
+    <body>
+      <header> <img src="images/NC.png" alt="NC logo" width= 300px align=left />
+        <br><br><br><br><br><br><br><br><br>
+        <input type="text" id="searchBox" placeholder="Search for a movie" class="search"/><br>
+        <button id="searchBtn" class="search">Search</button>
+        <br><br><br>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+        </nav>
+      </header>
+     <body> 
+      <div> <h1>About</h1>
+       <p>We are a movie rating site that also gives you suggestion of hot movies weekly. <br><br> Our what to watch section is filled with action packed movies that will leave you stunned. If we recommeded it and  you like it. Do share with us your insights. <br><br>Net chilla; We are here to make your movie night more enjoyable.<br><br> You can also rate the movies you have watched and suggest a movie you would like us to add to our list. contact us on our live chat </p></div>
+
+         <a href="https://wa.me/27699468891" target="_blank" class="whatsapp-btn">
+           <img src="images/whatsapp.png" class="whatsapp-icon" alt="WhatsApp">
+           Chat with us
+         </a>
+
+       <footer>
+         <p>© 2025 Net chilla. Ahhh mara Botlhale joooo, chilla</p> <p id="clock"></p>
+         <p style="font-weight: lighter;">designed by pbd.</p>
+       </footer>
+       <script src="script.js"></script>
+       <script src="https://cdn.jsdelivr.net/npm/moment@2.29.4/moment.min.js"></script>
+       </body>
